@@ -84,7 +84,7 @@ def update_data(data, data_file, cache_file):
         with open(cache_file, 'w') as cf:
             cf.write(write_string)
         with open(data_file, 'a') as df:
-            df.write(write_string)
+            df.write("\n" + write_string)
 
         return True
 
