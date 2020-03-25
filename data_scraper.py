@@ -115,4 +115,4 @@ while True:
 
     except Exception as error:
         print(p_log_date, ", ", p_log_time, ": ", error)
-    time.sleep(60)
+    time.sleep(60 * 10)
