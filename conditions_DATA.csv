@@ -1,0 +1,169 @@
+log_date,2020.04.10.
+log_time,21:03
+date,2020.04.10.
+time,07:02
+index,dead_id,condition
+0,1,szív és érrendszeri
+1,2,rosszindulatú daganat
+2,3,szív és érrendszeri
+3,4,szív és érrendszeri
+4,5,szív és érrendszeri
+5,6,magas vérnyomás
+6,7,alkoholos májkárosodás
+7,7,krónikus pancreatitis
+8,8,szív és érrendszeri
+9,9,pitvarfibrilláció
+10,9,magas vérnyomás
+11,9,ISzB
+12,9,aorta stenosis
+13,10,magas vérnyomás
+14,11,nincs adat
+15,12,érszűkület
+16,12,hepatopathia
+17,12,encephalopathia
+18,12,ISZB
+19,12,hypothyreosis
+20,13,TBC
+21,13,LC
+22,13,PE
+23,13,DM
+24,13,MVT
+25,13,HT
+26,13,diab. polyneuropathia
+27,14,pacemaker
+28,14,stroke
+29,14,Allergiás asthma
+30,15,COPD
+31,16,magas vérnyomás
+32,16,ISZB
+33,16,COPD
+34,16,cukorbeteg
+35,16,Vesetranszplantált
+36,17,magas vérnyomás
+37,18,ISZB
+38,18,magas vérnyomás
+39,19,szív- és érrendszeri megbetegedés
+40,19,idült reumás szívbetegség
+41,19,degenaratív („kopásos”) gerincbetegség
+42,20,szív- és érrendszeri megbetegedés
+43,20,agyi érbetegség
+44,20,idült reumás szívbetegség
+45,20,magas vérnyomás
+46,21,anyagcsere-betegség
+47,21,Ischaemiás szívbetegség ( koszorúér-betegség)
+48,22,prosztata-betegség
+49,22,mellhártya összenövés
+50,22,post TBC
+51,23,agyi infarktus
+52,23,magas vérnyomás
+53,24,veseelégtelenség
+54,24,érszűkület
+55,24,COPD krónikus tüdőbetegség
+56,24,magas vérnyomás
+57,24,szív -és érrendszeri megbetegedés
+58,25,magas vérnyomás
+59,25,veseelégtelenség
+60,26,magas vérnyomás
+61,26,szívelégtelenség
+62,26,cukorbetegség
+63,27,szív- és érrendszeri betegség
+64,27,krónikus légzőszervi betegség
+65,28,krónikus anyagcsere betegség
+66,28,szív- és érrendszeri betegség
+67,28,magasvérnyomás betegség
+68,29,érrendszeri betegség
+69,29,daganatos betegség
+70,30,anyagcsere betegség
+71,30,magas vérnyomás
+72,31,magas vérnyomás
+73,31,anyagcsere betegség
+74,31,daganatos betegség
+75,32,szív- és érrendszeri betegség
+76,33,daganatos betegség
+77,34,csontrendszeri elváltozás
+78,35,idegrendszeri betegség
+79,35,veleszületett genetikai rendellenesség
+80,35,daganatos betegség
+81,36,krónikus veseelégtelenség
+82,36,szív- és érrendszeri betegség
+83,36,magas vérnyomás
+84,37,szív- és érrendszeri betegség
+85,38,magas vérnyomás
+86,38,krónikus légzőszervi betegség
+87,39,krónikus veseelégtelenség
+88,39,anyagcsere és daganatos betegség
+89,40,magas vérnyomás
+90,40,sclerosis multiplex
+91,40,daganatos betegség
+92,41,krónikus veseelégtelenség
+93,41,krónikus tüdőbetegség
+94,41,magas vérnyomás
+95,42,krónikus obstruktív tüdőbetegség
+96,42,érelmeszesedés
+97,43,krónikus obstuktív tüdőbetegség
+98,44,autoimmun betegség
+99,44,nyirokrendszeri betegség
+100,44,szív- és érrendszeri betegség
+101,44,magas vérnyomás
+102,45,combnyaktörés
+103,45,magas vérnyomás
+104,46,magas vérnyomás
+105,46,traumás fejsérülés
+106,47,anyagcsere betegség
+107,47,szív- és érrendszeri betegség
+108,47,daganatos betegség
+109,47,krónikus veseelégtelenség
+110,48,szívbetegség
+111,48,magas vérnyomás betegség
+112,49,adatok feltöltés alatt
+113,50,anyagcsere betegség
+114,51,krónikus veseelégtelenség
+115,51,szív és érrendszeri megbetegedés
+116,52,adatok feltöltés alatt
+117,53,anyagcsere betegség
+118,53,magas vérnyomás
+119,54,idült reumás szívbetegség
+120,55,adatok feltöltés alatt
+121,56,adatok feltöltés alatt
+122,57,adatok feltöltés alatt
+123,58,adatok feltöltés alatt
+124,59,krónikus obstruktív tüdőbetegség
+125,60,adatok feltöltése folyamatban
+126,61,krónikus veseelégtelenség
+127,61,magas vérnyomás
+128,61,anyagcsere betegség
+129,62,szív és érrendszeri betegség
+130,62,krónikus veseelégtelenség
+131,62,magas vérnyomás
+132,63,szív és érrendszeri betegség
+133,64,anyagcsere rendellenesség
+134,64,magas vérnyomás
+135,65,magas vérnyomás
+136,65,daganatos betegség
+137,65,krónikus veseelégtelenség
+138,66,krónikus vesebetegség
+139,67,szív- és érrendszeri betegség
+140,67,krónikus obstruktív tüdőbetegség
+141,68,szív és érrendszeri betegség
+142,69,szív- és érrendszeri betegség
+143,69,magas vérnyomás
+144,70,krónikus obstruktív tüdőbetegség
+145,70,magas vérnyomás
+146,71,krónikus veseelégtelenség
+147,71,anyagcsere rendellenesség
+148,71,agyi érbetegség
+149,71,magas vérnyomás
+150,72,krónikus veseelégtelenség
+151,72,szívelégtelenség
+152,73,daganatos betegség
+153,73,magas vérnyomás
+154,74,anyagcsere betegség
+155,74,érrendszeri betegség
+156,75,anyagcsere betegség
+157,75,daganatos betegség
+158,75,krónikus májbetegség
+159,76,emésztőrendszeri betegség
+160,76,magas vérnyomás
+161,77,immun betegség
+162,77,szívbetegség
+163,77,magas vérnyomás
