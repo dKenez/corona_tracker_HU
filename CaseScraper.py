@@ -13,13 +13,13 @@ def parse_number(number):
 
 
 class CaseScraper:
-    __slots__ = ["file_cases", "src_cases", "src_deaths", "log_date", "log_time", "do_log", "date", "time", "cases",
+    __slots__ = ["file_cases", "soup_cases", "soup_deaths", "log_date", "log_time", "do_log", "date", "time", "cases",
                  "recovered", "died", "quarantined", "tested"]
 
     def __init__(self, file_cases, src_cases, src_deaths, log_date, log_time, do_log=True):
         self.file_cases = file_cases
-        self.src_cases = src_cases
-        self.src_deaths = src_deaths
+        self.soup_cases = bs.BeautifulSoup(src_cases, "lxml")
+        self.soup_deaths = bs.BeautifulSoup(src_deaths, "lxml")
         self.log_date = log_date
         self.log_time = log_time
         self.do_log = do_log
@@ -33,13 +33,11 @@ class CaseScraper:
         self.tested = None
 
     def scrape_data(self):
-        soup_cases = bs.BeautifulSoup(self.src_cases, "lxml")
-
-        header = soup_cases.find(id="block-block-1")
+        header = self.soup_cases.find(id="block-block-1")
         date_time_paragraph = header.p.string
         self.parse_date_time(date_time_paragraph)
 
-        for diagram_a in soup_cases.find_all("div", {"class": "diagram-a"}):
+        for diagram_a in self.soup_cases.find_all("div", {"class": "diagram-a"}):
             label = diagram_a.find("span", {"class": "label"}).string
             if label == "Fertőzött":
                 number = diagram_a.find("span", {"class": "number"})
@@ -50,8 +48,7 @@ class CaseScraper:
                 self.recovered = parse_number(number.string)
 
             elif label == "Elhunytak":
-                soup_deaths = bs.BeautifulSoup(self.src_deaths, "lxml")
-                table_first_row = soup_deaths.find("tr", {"class", "odd views-row-first"})
+                table_first_row = self.soup_deaths.find("tr", {"class", "odd views-row-first"})
                 number = table_first_row.find("td", {"class", "views-field views-field-field-elhunytak-sorszam"})
                 self.died = parse_number(number.string)
 

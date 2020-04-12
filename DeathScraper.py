@@ -41,14 +41,14 @@ def read_conditions(data_list):
 
 
 class DeathScraper:
-    __slots__ = ["file_cases", "file_conditions", "src_deaths", "log_date", "log_time", "date", "time", "do_log",
+    __slots__ = ["file_cases", "file_conditions", "soup_deaths", "log_date", "log_time", "date", "time", "do_log",
                  "force_conditions_update", "prev_death_count", "table_deaths", "table_conditions"]
 
     def __init__(self, file_cases, file_conditions, src_deaths, log_date, log_time, date, time, do_log=True,
                  force_conditions_update=False):
         self.file_cases = file_cases
         self.file_conditions = file_conditions
-        self.src_deaths = [src_deaths]
+        self.soup_deaths = [bs.BeautifulSoup(src_deaths, "lxml")]
         self.log_date = log_date
         self.log_time = log_time
         self.date = date
@@ -62,12 +62,14 @@ class DeathScraper:
         self.table_conditions = pd.DataFrame(columns=["dead_id", "conditions"])
 
     def get_page_count(self):
-        soup = bs.BeautifulSoup(self.src_deaths[0], "lxml")
-        list_item = soup.find("li", {"class": "pager-last"})
+        list_item = self.soup_deaths[0].find("li", {"class": "pager-last"})
         link = list_item.find("a")["href"]
         page_count = link.replace('https://koronavirus.gov.hu', '')
         page_count = page_count.replace('/elhunytak?page=', '')
         return int(page_count)
+
+    def add_src(self, src):
+        self.soup_deaths.append(bs.BeautifulSoup(src, "lxml"))
 
     def get_prev_death_count(self):
         with open(self.file_cases, 'r') as df:
@@ -79,8 +81,7 @@ class DeathScraper:
 
     def scrape_data(self):
         read_data = True
-        for src in self.src_deaths:
-            soup = bs.BeautifulSoup(src, "lxml")
+        for soup in self.soup_deaths:
             table = soup.find("tbody")
 
             for table_row in table.find_all("tr"):
