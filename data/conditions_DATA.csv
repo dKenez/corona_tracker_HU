@@ -1,7 +1,7 @@
-log_date,2020.04.15.
-log_time,12:14
-date,2020.04.15.
-time,06:55
+log_date,2020.04.18.
+log_time,10:34
+date,2020.04.18.
+time,07:38
 index,dead_id,condition
 0,1,szív és érrendszeri
 1,2,rosszindulatú daganat
@@ -18,21 +18,21 @@ index,dead_id,condition
 12,9,aorta stenosis
 13,10,magas vérnyomás
 14,11,nincs adat
-15,12,érszűkület
-16,12,hepatopathia
-17,12,encephalopathia
-18,12,ISZB
-19,12,hypothyreosis
-20,13,PE
-21,13,TBC
-22,13,LC
+15,12,ISZB
+16,12,encephalopathia
+17,12,hepatopathia
+18,12,hypothyreosis
+19,12,érszűkület
+20,13,MVT
+21,13,diab. polyneuropathia
+22,13,DM
 23,13,HT
-24,13,diab. polyneuropathia
-25,13,MVT
-26,13,DM
-27,14,pacemaker
-28,14,stroke
-29,14,Allergiás asthma
+24,13,PE
+25,13,LC
+26,13,TBC
+27,14,Allergiás asthma
+28,14,pacemaker
+29,14,stroke
 30,15,COPD
 31,16,magas vérnyomás
 32,16,ISZB
@@ -43,12 +43,12 @@ index,dead_id,condition
 37,18,magas vérnyomás
 38,18,ISZB
 39,19,szív- és érrendszeri megbetegedés
-40,19,idült reumás szívbetegség
-41,19,degenaratív („kopásos”) gerincbetegség
-42,20,szív- és érrendszeri megbetegedés
-43,20,agyi érbetegség
-44,20,idült reumás szívbetegség
-45,20,magas vérnyomás
+40,19,degenaratív („kopásos”) gerincbetegség
+41,19,idült reumás szívbetegség
+42,20,agyi érbetegség
+43,20,idült reumás szívbetegség
+44,20,magas vérnyomás
+45,20,szív- és érrendszeri megbetegedés
 46,21,anyagcsere-betegség
 47,21,Ischaemiás szívbetegség ( koszorúér-betegség)
 48,22,prosztata-betegség
@@ -56,13 +56,13 @@ index,dead_id,condition
 50,22,post TBC
 51,23,agyi infarktus
 52,23,magas vérnyomás
-53,24,szív -és érrendszeri megbetegedés
-54,24,veseelégtelenség
-55,24,érszűkület
-56,24,COPD krónikus tüdőbetegség
-57,24,magas vérnyomás
-58,25,veseelégtelenség
-59,25,magas vérnyomás
+53,24,COPD krónikus tüdőbetegség
+54,24,magas vérnyomás
+55,24,veseelégtelenség
+56,24,érszűkület
+57,24,szív -és érrendszeri megbetegedés
+58,25,magas vérnyomás
+59,25,veseelégtelenség
 60,26,magas vérnyomás
 61,26,cukorbetegség
 62,26,szívelégtelenség
@@ -71,25 +71,25 @@ index,dead_id,condition
 65,28,krónikus anyagcsere betegség
 66,28,szív- és érrendszeri betegség
 67,28,magasvérnyomás betegség
-68,29,daganatos betegség
-69,29,érrendszeri betegség
+68,29,érrendszeri betegség
+69,29,daganatos betegség
 70,30,anyagcsere betegség
 71,30,magas vérnyomás
-72,31,anyagcsere betegség
+72,31,magas vérnyomás
 73,31,daganatos betegség
-74,31,magas vérnyomás
+74,31,anyagcsere betegség
 75,32,szív- és érrendszeri betegség
 76,33,daganatos betegség
 77,34,csontrendszeri elváltozás
-78,35,daganatos betegség
-79,35,idegrendszeri betegség
-80,35,veleszületett genetikai rendellenesség
-81,36,magas vérnyomás
-82,36,krónikus veseelégtelenség
-83,36,szív- és érrendszeri betegség
+78,35,idegrendszeri betegség
+79,35,veleszületett genetikai rendellenesség
+80,35,daganatos betegség
+81,36,krónikus veseelégtelenség
+82,36,szív- és érrendszeri betegség
+83,36,magas vérnyomás
 84,37,szív- és érrendszeri betegség
-85,38,krónikus légzőszervi betegség
-86,38,magas vérnyomás
+85,38,magas vérnyomás
+86,38,krónikus légzőszervi betegség
 87,39,anyagcsere és daganatos betegség
 88,39,krónikus veseelégtelenség
 89,40,magas vérnyomás
@@ -101,10 +101,10 @@ index,dead_id,condition
 95,42,érelmeszesedés
 96,42,krónikus obstruktív tüdőbetegség
 97,43,krónikus obstuktív tüdőbetegség
-98,44,szív- és érrendszeri betegség
-99,44,magas vérnyomás
+98,44,magas vérnyomás
+99,44,nyirokrendszeri betegség
 100,44,autoimmun betegség
-101,44,nyirokrendszeri betegség
+101,44,szív- és érrendszeri betegség
 102,45,combnyaktörés
 103,45,magas vérnyomás
 104,46,traumás fejsérülés
@@ -115,196 +115,339 @@ index,dead_id,condition
 109,47,anyagcsere betegség
 110,48,szívbetegség
 111,48,magas vérnyomás betegség
-112,49,adatok feltöltés alatt
-113,50,anyagcsere betegség
-114,51,szív és érrendszeri megbetegedés
-115,51,krónikus veseelégtelenség
-116,52,adatok feltöltés alatt
-117,53,magas vérnyomás
-118,53,anyagcsere betegség
-119,54,idült reumás szívbetegség
-120,55,adatok feltöltés alatt
-121,56,adatok feltöltés alatt
-122,57,adatok feltöltés alatt
-123,58,adatok feltöltés alatt
-124,59,krónikus obstruktív tüdőbetegség
-125,60,adatok feltöltése folyamatban
-126,61,magas vérnyomás
-127,61,anyagcsere betegség
-128,61,krónikus veseelégtelenség
-129,62,szív és érrendszeri betegség
-130,62,krónikus veseelégtelenség
-131,62,magas vérnyomás
-132,63,szív és érrendszeri betegség
-133,64,magas vérnyomás
-134,64,anyagcsere rendellenesség
-135,65,daganatos betegség
-136,65,krónikus veseelégtelenség
-137,65,magas vérnyomás
-138,66,krónikus vesebetegség
-139,67,szív- és érrendszeri betegség
-140,67,krónikus obstruktív tüdőbetegség
-141,68,szív és érrendszeri betegség
-142,69,magas vérnyomás
-143,69,szív- és érrendszeri betegség
-144,70,magas vérnyomás
-145,70,krónikus obstruktív tüdőbetegség
-146,71,krónikus veseelégtelenség
-147,71,anyagcsere rendellenesség
-148,71,agyi érbetegség
-149,71,magas vérnyomás
-150,72,szívelégtelenség
-151,72,krónikus veseelégtelenség
-152,73,daganatos betegség
-153,73,magas vérnyomás
-154,74,érrendszeri betegség
-155,74,anyagcsere betegség
-156,75,krónikus májbetegség
-157,75,anyagcsere betegség
-158,75,daganatos betegség
-159,76,emésztőrendszeri betegség
-160,76,magas vérnyomás
-161,77,immun betegség
-162,77,szívbetegség
-163,77,magas vérnyomás
-164,78,krónikus keringési elégtelenség
-165,78,szívizom elégtelenség
-166,78,magas vérnyomás
-167,78,cukorbetegség
-168,78,krónikus veseelégtelenség
-169,79,daganatos megbetegedés
-170,79,beszűkült vesefunkció
-171,79,szívelégtelenség
-172,80,daganatos megbetegedés
-173,80,magas vérnyomás
-174,81,adatok feltöltés alatt
-175,82,szívelégtelenség
-176,82,daganatos megbetegedés
-177,83,szív- és veseelégtelenség
-178,83,tüdőgyulladás
-179,83,légzési elégtelenség
-180,84,verőér elmeszesedés
-181,84,tüdőgyulladás
-182,84,légzési elégtelenség
-183,85,adatok feltöltés alatt
-184,86,anyagcsere betegség
-185,86,krónikus obstruktív tüdőbetegség
-186,86,magas vérnyomás
-187,87,dementia
-188,87,combnyaktörés utáni állapot
-189,88,szívritmuszavar
-190,88,pajzsmirigy alulműködés
-191,88,magas vérnyomás
-192,88,krónikus obstruktív tüdőbetegség
-193,89,krónikus obstruktív tüdőbetegség
-194,89,magas vérnyomás
-195,89,pajzsmirigy alulműködés
-196,89,szívritmuszavar
-197,90,Crohn betegség
-198,91,izületi gyulladás
-199,91,magas vérnyomás
-200,92,daganatos betegség miatt kialakult veseelégtelenség
-201,93,magas vérnyomás
-202,93,anyagcsere betegség
-203,94,magas vérnyomás
-204,94,krónikus obstruktív tüdőbetegség
-205,94,iszkémiás szívbetegség
-206,94,szívritmus zavar
-207,94,tüdőrák
-208,95,szívbetegség
-209,95,magasvérnyomás
-210,95,csont-izomrendszer és kötőszövet betegsége
-211,96,kiterjedt érbetegség
-212,96,krónikus obstruktív tüdőbetegség
-213,96,magas vérnyomás
-214,97,szív- és érrendszeri betegség
-215,97,daganatos betegség
-216,98,stroke
-217,98,magas vérnyomás
-218,98,szívritmuszavar
-219,99,krónikus obstuktív tüdőbetegség
-220,99,anyagcsere rendellenesség
-221,99,magasvérnyomás
-222,100,daganatos betegség
-223,100,krónikus veseelégtelenség
-224,101,epekövesség
-225,101,vérszegénység
-226,101,tüdő fibrózis
-227,102,magas vérnyomás
-228,102,szívritmus zavar
-229,102,krónikus veseelégtelenség
-230,102,érelmeszesedés
-231,103,adat feltöltés alatt
-232,104,dementia
-233,104,szív-és érrendszeri betegség
-234,104,magas vérnyomás
-235,105,idült obstruktív tüdőbetegség
-236,105,magas vérnyomás
-237,105,cukorbetegség
-238,106,krónikus veseelégtelenség
-239,106,szívelégtelenség
-240,106,pajzsmirigy betegség
-241,106,pitvarfibrilláció
-242,107,érelmeszesedés
-243,107,magas vérnyomás
-244,108,daganatos megbetegedés
-245,108,hasnyálmirigy gyulladás
-246,108,pajzsmirigy túlműködés
-247,108,magas vérnyomás
-248,109,adat feltöltés alatt
-249,110,anyagcsere betegség
-250,110,magas vérnyomás
-251,111,veseelégtelenség
-252,112,érelmeszesedés
-253,112,általános leépülés
-254,112,magas vérnyomás
-255,113,krónikus veseelégtelenség
-256,113,szívelégtelenség
-257,113,magas vérnyomás
-258,114,cukorbetegség
-259,114,szívelégtelenség
-260,114,pacemaker
-261,114,COPD
-262,114,magas vérnyomás
-263,115,pitvarfibrilláció
-264,115,magas vérnyomás
-265,115,tartós légcsőkanül
-266,116,stroke
-267,116,ISZB
-268,116,rheumatoid arthritis
-269,116,hepatitis B fertőzés
-270,116,COPD
-271,117,cukorbetegség
-272,118,vese problémák
-273,118,szívizomelégtelenség
-274,119,érszűkület
-275,119,tumor
-276,119,szívelégtelenség
-277,120,vese elégtelenség
-278,120,érszűkület
-279,121,cukorbetegség
-280,121,magas vérnyomás
-281,122,struma
-282,122,pszichiátriai kezelés
-283,122,epilepszia
-284,123,stroke
-285,123,magas vérnyomás
-286,124,adat feltöltés alatt
-287,125,veseelégtelenség
-288,125,szívelégtelenség
-289,125,cukorbetegség
-290,126,mélyvénás trombózis
-291,126,szívbetegség
-292,126,magas vérnyomás
-293,127,érelmeszesedés
-294,127,magas vérnyomás
-295,128,cukorbetegség
-296,129,szív- és érrendszeri betegség
-297,130,szívritmus zavar
-298,130,krónikus veseelégtelenség
-299,131,Insuff.circ. Hydrothorax l.u.St.p. AMI
-300,132,stroke
-301,133,krónikus veseelégtelenség
-302,133,magas vérnyomás
-303,134,daganatos betegség
-304,134,szív- és érrendszeri betegség
+112,49,magas vérnyomás
+113,49,cukorbetegség
+114,50,anyagcsere betegség
+115,51,szív és érrendszeri megbetegedés
+116,51,krónikus veseelégtelenség
+117,52,anyagcsere betegség
+118,52,magasvérnyomás
+119,52,krónikus veseelégtelenség
+120,53,anyagcsere betegség
+121,53,magas vérnyomás
+122,54,idült reumás szívbetegség
+123,55,krónikus veseelégtelenség
+124,55,krónikus májbetegség
+125,55,magasvérnyomás
+126,56,anyagcsere betegség
+127,56,magasvérnyomás
+128,57,agyi érbetegség
+129,57,magasvérnyomás
+130,58,adatok feltöltés alatt
+131,59,krónikus obstruktív tüdőbetegség
+132,60,adatok feltöltés alatt
+133,61,magas vérnyomás
+134,61,anyagcsere betegség
+135,61,krónikus veseelégtelenség
+136,62,szív és érrendszeri betegség
+137,62,krónikus veseelégtelenség
+138,62,magas vérnyomás
+139,63,szív és érrendszeri betegség
+140,64,anyagcsere rendellenesség
+141,64,magas vérnyomás
+142,65,daganatos betegség
+143,65,magas vérnyomás
+144,65,krónikus veseelégtelenség
+145,66,krónikus vesebetegség
+146,67,krónikus obstruktív tüdőbetegség
+147,67,szív- és érrendszeri betegség
+148,68,szív és érrendszeri betegség
+149,69,magas vérnyomás
+150,69,szív- és érrendszeri betegség
+151,70,magas vérnyomás
+152,70,krónikus obstruktív tüdőbetegség
+153,71,krónikus veseelégtelenség
+154,71,anyagcsere rendellenesség
+155,71,agyi érbetegség
+156,71,magas vérnyomás
+157,72,szívelégtelenség
+158,72,krónikus veseelégtelenség
+159,73,daganatos betegség
+160,73,magas vérnyomás
+161,74,érrendszeri betegség
+162,74,anyagcsere betegség
+163,75,anyagcsere betegség
+164,75,daganatos betegség
+165,75,krónikus májbetegség
+166,76,emésztőrendszeri betegség
+167,76,magas vérnyomás
+168,77,magas vérnyomás
+169,77,szívbetegség
+170,77,immun betegség
+171,78,krónikus veseelégtelenség
+172,78,cukorbetegség
+173,78,krónikus keringési elégtelenség
+174,78,szívizom elégtelenség
+175,78,magas vérnyomás
+176,79,beszűkült vesefunkció
+177,79,szívelégtelenség
+178,79,daganatos megbetegedés
+179,80,daganatos megbetegedés
+180,80,magas vérnyomás
+181,81,súlyos depresszió
+182,81,HT
+183,82,szívelégtelenség
+184,82,daganatos megbetegedés
+185,83,légzési elégtelenség
+186,83,szív- és veseelégtelenség
+187,83,tüdőgyulladás
+188,84,verőér elmeszesedés
+189,84,tüdőgyulladás
+190,84,légzési elégtelenség
+191,85,adatok feltöltés alatt
+192,86,anyagcsere betegség
+193,86,krónikus obstruktív tüdőbetegség
+194,86,magas vérnyomás
+195,87,combnyaktörés utáni állapot
+196,87,dementia
+197,88,szívritmuszavar
+198,88,pajzsmirigy alulműködés
+199,88,krónikus obstruktív tüdőbetegség
+200,88,magas vérnyomás
+201,89,krónikus obstruktív tüdőbetegség
+202,89,magas vérnyomás
+203,89,pajzsmirigy alulműködés
+204,89,szívritmuszavar
+205,90,Crohn betegség
+206,91,izületi gyulladás
+207,91,magas vérnyomás
+208,92,daganatos betegség miatt kialakult veseelégtelenség
+209,93,anyagcsere betegség
+210,93,magas vérnyomás
+211,94,tüdőrák
+212,94,szívritmus zavar
+213,94,magas vérnyomás
+214,94,krónikus obstruktív tüdőbetegség
+215,94,iszkémiás szívbetegség
+216,95,csont-izomrendszer és kötőszövet betegsége
+217,95,magasvérnyomás
+218,95,szívbetegség
+219,96,kiterjedt érbetegség
+220,96,krónikus obstruktív tüdőbetegség
+221,96,magas vérnyomás
+222,97,szív- és érrendszeri betegség
+223,97,daganatos betegség
+224,98,magas vérnyomás
+225,98,stroke
+226,98,szívritmuszavar
+227,99,krónikus obstuktív tüdőbetegség
+228,99,anyagcsere rendellenesség
+229,99,magasvérnyomás
+230,100,daganatos betegség
+231,100,krónikus veseelégtelenség
+232,101,epekövesség
+233,101,vérszegénység
+234,101,tüdő fibrózis
+235,102,krónikus veseelégtelenség
+236,102,érelmeszesedés
+237,102,szívritmus zavar
+238,102,magas vérnyomás
+239,103,adat feltöltés alatt
+240,104,magas vérnyomás
+241,104,dementia
+242,104,szív-és érrendszeri betegség
+243,105,idült obstruktív tüdőbetegség
+244,105,magas vérnyomás
+245,105,cukorbetegség
+246,106,pajzsmirigy betegség
+247,106,pitvarfibrilláció
+248,106,szívelégtelenség
+249,106,krónikus veseelégtelenség
+250,107,érelmeszesedés
+251,107,magas vérnyomás
+252,108,magas vérnyomás
+253,108,pajzsmirigy túlműködés
+254,108,daganatos megbetegedés
+255,108,hasnyálmirigy gyulladás
+256,109,adat feltöltés alatt
+257,110,anyagcsere betegség
+258,110,magas vérnyomás
+259,111,veseelégtelenség
+260,112,érelmeszesedés
+261,112,általános leépülés
+262,112,magas vérnyomás
+263,113,krónikus veseelégtelenség
+264,113,szívelégtelenség
+265,113,magas vérnyomás
+266,114,cukorbetegség
+267,114,szívelégtelenség
+268,114,magas vérnyomás
+269,114,COPD
+270,114,pacemaker
+271,115,pitvarfibrilláció
+272,115,magas vérnyomás
+273,115,tartós légcsőkanül
+274,116,hepatitis B fertőzés
+275,116,rheumatoid arthritis
+276,116,COPD
+277,116,ISZB
+278,116,stroke
+279,117,cukorbetegség
+280,118,szívizomelégtelenség
+281,118,vese problémák
+282,119,tumor
+283,119,érszűkület
+284,119,szívelégtelenség
+285,120,vese elégtelenség
+286,120,érszűkület
+287,121,cukorbetegség
+288,121,magas vérnyomás
+289,122,struma
+290,122,pszichiátriai kezelés
+291,122,epilepszia
+292,123,stroke
+293,123,magas vérnyomás
+294,124,adat feltöltés alatt
+295,125,veseelégtelenség
+296,125,cukorbetegség
+297,125,szívelégtelenség
+298,126,mélyvénás trombózis
+299,126,szívbetegség
+300,126,magas vérnyomás
+301,127,érelmeszesedés
+302,127,magas vérnyomás
+303,128,cukorbetegség
+304,129,szív- és érrendszeri betegség
+305,130,szívritmus zavar
+306,130,krónikus veseelégtelenség
+307,131,Insuff.circ. Hydrothorax l.u.St.p. AMI
+308,132,stroke
+309,133,krónikus veseelégtelenség
+310,133,magas vérnyomás
+311,134,daganatos betegség
+312,134,szív- és érrendszeri betegség
+313,135,vérszegénység
+314,135,pitvarfibrilláció
+315,135,myelodysplasia
+316,135,vesetranszplantáció
+317,135,veseelégtelenség
+318,135,magas vérnyomás
+319,136,kompressziós csigolyatörés
+320,136,térd arthrosis
+321,137,szívelégtelenség
+322,137,pitvarfibrilláció
+323,137,magas vérnyomás
+324,137,veseelégtelenség
+325,137,leukaemia
+326,137,pajzsmirigy alulműködés
+327,138,magas vérnyomás
+328,138,bakteriális tüdőgyulladás
+329,138,idült obstruktív tüdőbetegség
+330,139,cukorbetegség
+331,139,májelégtelenség
+332,139,érelmeszesedés
+333,139,magas vérnyomás
+334,140,magas vérnyomás
+335,140,tüdőgyulladás
+336,140,idült légzőszervi megbetegedés
+337,141,pajzsmirigy túlműködés
+338,141,dementia
+339,141,stroke
+340,141,magas vérnyomás
+341,142,adat feltöltés alatt
+342,143,Alzheimer-kór
+343,143,inkontinencia
+344,143,organikus hangulatzavar
+345,144,érelmeszesedés
+346,144,magasvérnyomás
+347,144,cachexia
+348,144,PEG táplálás
+349,144,Parkinson-kór
+350,145,krónikus veseelégtelenség
+351,145,magas vérnyomás
+352,145,agyérelmeszesedés
+353,145,encephalopathia (agykárosodás)
+354,145,légzési elégtelenség
+355,146,veseelégtelenség
+356,146,magas vérnyomás
+357,146,agyi keringési zavar
+358,146,maior amputáció
+359,146,szövődményes diabetes mellitus (cukorbetegség)
+360,147,epeműtét utáni állapot
+361,147,májeredetű agyvelő bántalom
+362,147,májzsugor
+363,147,magas vérnyomás
+364,148,idült szívizom elégtelenség
+365,148,magas vérnyomás
+366,148,krónikus obstruktív tüdőbetegség
+367,148,érszűkület
+368,148,tüdőtágulat
+369,148,stroke következményei
+370,148,tüdőgyulladás
+371,149,hólyagtumor
+372,149,agyérelmeszedés
+373,149,koszorúér-betegség
+374,149,magas vérnyomás
+375,150,agyérelmeszesedés
+376,150,Parkinsor-kór
+377,151,magas vérnyomás
+378,152,krónikus veseelégtelenség
+379,152,vastagbélrák
+380,152,magas vérnyomás
+381,153,magas vérnyomás
+382,153,szív-és érrendszeri érelmeszesedés
+383,153,generalizált agyi
+384,154,krónikus obstruktív tüdőbetegség
+385,154,végstádiumú vesebetegség
+386,154,verőérbetegség
+387,154,szívelégtelenség
+388,154,magas vérnyomás
+389,155,érszűkület
+390,155,magas vérnyomás
+391,156,magas vérnyomás
+392,156,cukorbetegség
+393,156,pajzsmirigy elégtelenség
+394,156,szívritmuszavar
+395,156,érszűkület
+396,157,krónikus veseelégtelenség
+397,157,magas vérnyomás
+398,157,csontvelői kóros vérképzés tünetegyüttes
+399,158,szív-és érrendszeri betegség
+400,158,anyagcsere betegség
+401,158,magas vérnyomás
+402,159,portalis encephalopathia
+403,159,cataracta műtét
+404,159,LC cholecystect.
+405,159,atrophia cer.
+406,159,krónikus májbetegség
+407,159,magas vérnyomás
+408,160,veseelégtelenség
+409,160,tüdőembolia
+410,160,tüdőgyulladás
+411,161,magas vérnyomás
+412,161,daganatos betegség
+413,161,általános érelmeszesedés
+414,162,pacemaker
+415,162,cukorbetegség
+416,162,magas vérnyomás
+417,162,művese kezelés
+418,163,szív és agyi erek meszesedése
+419,163,magas vérnyomás
+420,164,magas vérnyomás
+421,164,endokrin betegség
+422,164,agyi érbetegség
+423,165,idegrendszeri betegség
+424,165,általános érelmeszesedés
+425,166,magas vérnyomás
+426,166,szívbetegség
+427,167,Fibr. auric. St.p. cholecytectomiam
+428,167,Hyperthyreosis
+429,167,Mitr. et ao. insuff. valv.
+430,167,M. hypertonicus
+431,167,Motoneuron betegség 
+Kísérõbetegség: ISZB
+432,167,alapbetegség: érelmeszesédés
+433,168,általános érelmeszesedés
+434,168,magas vérnyomás
+435,169,krónikus obstruktív tüdőbetegség
+436,169,daganatos betegség
+437,169,magas vérnyomás
+438,170,anyagcsere rendellenesség
+439,170,veseelégtelenség
+440,170,szívelégtelenség
+441,170,magas vérnyomás
+442,171,cukorbetegség
+443,171,magas vérnyomás
+444,172,Huntington kór
+445,172,Urocystitis
+446,172,pneumonia hypostatica l.d. in obs.
