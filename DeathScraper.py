@@ -1,5 +1,4 @@
 import bs4 as bs
-import pandas as pd
 
 
 def parse_number(number):
@@ -12,18 +11,12 @@ def parse_number(number):
         return None
 
 
-def add_row(df, row):
-    df.loc[-1] = row
-    df.index = df.index + 1
-    return df.sort_index()
-
-
-def format_row_to_string(df, index_offset=0):
+def format_row_to_string(data_list):
     return_list = []
-    for index, row in df.iterrows():
+    for row in data_list:
         if len(row) > 0:
-            formatted_row = str(index + index_offset)
-            for data in row:
+            formatted_row = str(row[0])
+            for data in row[1:]:
                 formatted_row += "," + str(data)
             return_list.append(formatted_row)
     return return_list
@@ -31,12 +24,25 @@ def format_row_to_string(df, index_offset=0):
 
 def read_conditions(data_list):
     return_list = []
-    conditions = data_list[1].split(',')
     dead_id = data_list[0]
+    raw_conditions = data_list[1]
+    raw_conditions = raw_conditions.replace('\n', ',')
+    raw_conditions = raw_conditions.replace('\r', ',')
+    conditions = raw_conditions.split(',')
     for condition in conditions:
         condition = condition.strip()
-        if condition != "":
+        if len(condition) > 0:
+
             return_list.append([dead_id, condition])
+    return return_list
+
+
+def index_list(data_list):
+    index = 0
+    return_list = []
+    for row in data_list:
+        return_list.append([index, *row])
+        index += 1
     return return_list
 
 
@@ -57,9 +63,8 @@ class DeathScraper:
         self.force_conditions_update = force_conditions_update
 
         self.prev_death_count = self.get_prev_death_count()
-        self.table_deaths = pd.DataFrame(columns=["log_date", "log_time", "date",
-                                                  "time", "dead_id", "sex", "age"])
-        self.table_conditions = pd.DataFrame(columns=["dead_id", "conditions"])
+        self.table_deaths = []
+        self.table_conditions = []
 
     def get_page_count(self):
         list_item = self.soup_deaths[0].find("li", {"class": "pager-last"})
@@ -94,7 +99,7 @@ class DeathScraper:
                         if column <= 2:
                             if column == 0:
                                 data = parse_number(table_data.string)
-                                if data == self.prev_death_count:
+                                if data <= self.prev_death_count:
                                     read_data = False
                                     data = None
 
@@ -116,9 +121,8 @@ class DeathScraper:
                     column += 1
 
                 if read_data:
-                    data_row = [self.log_date, self.log_time, self.date, self.time, *deaths_data]
-                    row_series = pd.Series(data_row, index=self.table_deaths.columns)
-                    self.table_deaths = self.table_deaths.append(row_series, ignore_index=True)
+                    data_row = [deaths_data[0]-1, self.log_date, self.log_time, self.date, self.time, *deaths_data]
+                    self.table_deaths.append(data_row)
 
                 column = 0
                 conditions_data = []
@@ -136,14 +140,14 @@ class DeathScraper:
                     column += 1
 
                 for condition in read_conditions(conditions_data):
-                    row_series = pd.Series(condition, index=self.table_conditions.columns)
-                    self.table_conditions = self.table_conditions.append(row_series, ignore_index=True)
+                    self.table_conditions.append(condition)
 
-        self.table_deaths = self.table_deaths.sort_values(by=["dead_id"], ascending=True, ignore_index=True)
-        self.table_conditions = self.table_conditions.sort_values(by=["dead_id"], ascending=True, ignore_index=True)
+        self.table_deaths.sort(key=lambda x: x[0])
+        self.table_conditions.sort(key=lambda x: x[0])
+        self.table_conditions = index_list(self.table_conditions)
 
     def update_data(self):
-        write_data = format_row_to_string(self.table_deaths, self.prev_death_count)
+        write_data = format_row_to_string(self.table_deaths)
         update = False
         if len(write_data) > 0:
             update = True
