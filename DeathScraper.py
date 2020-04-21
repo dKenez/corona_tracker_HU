@@ -160,7 +160,7 @@ class DeathScraper:
         if update or self.force_conditions_update:
             write_data = format_row_to_string(self.table_conditions)
             with open(self.file_conditions, 'w', encoding="utf-8") as df:
-                df.write("log_date,{0}\nlog_time,{1}\ndate,{2}\ntime,{3}\n".format(self.log_date, self.log_time,
+                df.write("log_date,{0},\nlog_time,{1},\ndate,{2},\ntime,{3},\n".format(self.log_date, self.log_time,
                                                                                    self.date, self.time))
                 df.write("index,dead_id,condition")
                 for write_string in write_data:
