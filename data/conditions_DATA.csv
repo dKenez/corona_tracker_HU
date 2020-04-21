@@ -1,7 +1,7 @@
-log_date,2020.04.21.
-log_time,08:00
-date,2020.04.21.
-time,07:06
+log_date,2020.04.21.,
+log_time,08:00,
+date,2020.04.21.,
+time,07:06,
 index,dead_id,condition
 0,1,szív és érrendszeri
 1,2,rosszindulatú daganat
