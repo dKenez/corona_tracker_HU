@@ -1,7 +1,7 @@
-log_date,2020.04.21.,
+log_date,2020.04.25.,
 log_time,08:00,
-date,2020.04.21.,
-time,07:06,
+date,2020.04.25.,
+time,07:09,
 index,dead_id,condition
 0,1,szív és érrendszeri
 1,2,rosszindulatú daganat
@@ -568,3 +568,132 @@ index,dead_id,condition
 562,212,daganatos betegség
 563,212,anyagcsere betegség
 564,213,krónikus obstruktív tüdőbetegség
+565,214,szívritmuszavar
+566,214,szívizom elégtelenség
+567,214,magas vérnyomás
+568,214,cukorbetegség
+569,215,asztma
+570,215,krónikus obstruktív tüdőbetegség
+571,216,demencia
+572,216,Anderson-Tawil szindróma
+573,217,cukorbetegség
+574,217,magas vérnyomás
+575,217,hepatitis
+576,218,magas vérnyomás
+577,219,magas vérnyomás
+578,219,köszvény
+579,220,érelmeszesedés
+580,220,magas vérnyomás
+581,221,2-es típusú cukorbetegség
+582,221,veseelégtelenség
+583,221,koszorúér betegség
+584,222,vascularis dementia
+585,223,Hepato-splenomegalia (máj-lépbetegség)
+586,223,CLL
+587,223,ascites
+588,223,lympadenomegalia
+589,224,magas vérnyomás
+590,224,dilatativ cardiomyopathia
+591,224,iszkémiás szívbetegség
+592,224,pitvarfibrillatio
+593,225,dementia
+594,225,anémia
+595,226,magas vérnyomás
+596,226,idült májelégtelenség
+597,226,pajzsmirigy alulműködés
+598,227,csontritkulás
+599,227,demencia
+600,228,keringési problémák
+601,229,stroke
+602,230,magas vérnyomás
+603,230,rosszindulatú daganatok
+604,231,magas vérnyomás
+605,231,IBSZ
+606,231,Alzheimer-kór
+607,231,érelmeszesedés
+608,231,porckorong elváltozás
+609,231,iszkémiás szívbetegség
+610,232,demencia
+611,232,magas vérnyomás
+612,232,pangásos szívelégtelenség
+613,232,veseelégtelenség
+614,232,hosszantartó alkoholizmus
+615,233,magas vérnyomás
+616,233,pangásos szívelégtelenség
+617,234,vérmérgezés
+618,234,cukorbetegség
+619,234,magas vérnyomás
+620,234,pacemaker
+621,234,iszkémiás szívbetegség
+622,235,iszkémiás szívbetegség
+623,235,cukorbetegség
+624,235,veseelégtelenség
+625,236,heveny légzési elégtelenség
+626,237,heveny légzési elégtelenség
+627,238,prosztata daganat
+628,239,érelmeszesedés
+629,239,csontritkulás
+630,239,demencia
+631,239,légzési és keringési elégtelenség
+632,240,szívbetegség
+633,240,magas vérnyomás
+634,240,cukorbetegség
+635,241,veseelégtelenség
+636,241,embólia
+637,241,trombozis
+638,241,vesegyulladás
+639,242,magas vérnyomás
+640,242,szívritmuszavar
+641,242,béltumor
+642,242,tüdőáttét
+643,243,májtályog
+644,244,magas vérnyomás
+645,244,koleszterin
+646,244,bőrdaganat
+647,245,magas vérnyomás
+648,245,szívbetegség
+649,245,szívaneurizma
+650,246,magas vérnyomás
+651,246,demencia
+652,247,magas vérnyomás
+653,247,érrendszeri megbetegedés
+654,248,tüdő tumor
+655,248,pajzsmirigy-alulműködés
+656,248,autoimmun betegség
+657,249,emlőtumor
+658,249,petefészek tumor
+659,249,magas vérnyomás
+660,249,cukorbetegség
+661,250,magas vérnyomás
+662,250,általános érelmeszesedés
+663,250,szívelégtelenség
+664,251,magas vérnyomás
+665,251,általános érelmeszesedés
+666,251,szívelégtelenség
+667,252,heveny veseelégtelenség
+668,252,szívbetegség
+669,252,vérszegénység
+670,253,koponyaűri vérzés
+671,254,méhnyakrák többszörös áttéttel
+672,255,magas vérnyomás
+673,255,epilepszia
+674,255,szívbetegség
+675,256,súlyos bakteriális fertőzés
+676,256,vérmérgezés
+677,256,bélgyulladás
+678,257,szívkoszorúér betegség
+679,257,pitvar fribrilláció
+680,258,magas vérnyomás
+681,258,leépülés
+682,258,iszkémiás szívbetegség
+683,259,magas vérnyomás
+684,259,demencia
+685,259,szívkoszorúér betegség
+686,259,autoimmun betegség
+687,260,szenilitás
+688,260,érelmeszesedés
+689,261,magas vérnyomás
+690,261,ízületi gyulladás
+691,261,pajzsmirigy alulműködés
+692,262,magas vérnyomás
+693,262,szívbetegség
